@@ -4,7 +4,7 @@ import moment from "moment";
 import "./app.scss";
 import MyDatePicker from "../src/Components/Date-picker/MyDatePicker";
 import MyRangePicker from "../src/Components/Date-Range-picker/MyRangePicker";
-
+import Agevalidate from "./Components/Date-picker/Agevalidate";
 function App() {
   const [
     dates,
@@ -40,6 +40,7 @@ function App() {
           },
         }}
       >
+        <Agevalidate />
         <MyDatePicker onChange={handleDatePickerChange} />
         <MyRangePicker onChange={handleRangePickerChange} />
       </ConfigProvider>
